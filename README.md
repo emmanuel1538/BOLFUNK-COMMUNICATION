@@ -25,3 +25,17 @@ BOLFUNK is facing rising churn, especially among long-tenured and high-value cus
   +	CallCenterData (satisfaction, resolution, escalation, topic, agent)
 *	No common key was found; each dataset was analyzed separately.
 *	Calculated tables, new columns, and DAX measures were used to enhance the datasets.
+  ![](MODELLING.png).
+ ## Data Preparation
+Performed in Power BI using Power Query and the data model:
+* Removed duplicates and corrected inconsistent values.
+*	Transformed columns (e.g., converted tenure to numeric).
+*	Created logical DAX columns
+  ![](tenure group column.png)
+*	Built metrics for:
+  + Churn Rate
+  + Risk Score (0–6 scale)
+  + Escalation Rate
+  + Average Satisfaction
+  + Resolution Rates
+
